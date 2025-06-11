@@ -40,7 +40,11 @@ jobs:
 
       - name: build winterjs
         run: |
-          cargo install --git https://github.com/wasmerio/winterjs winterjs
+          # cargo install --git https://github.com/wasmerio/winterjs winterjs
+
+          git clone https://github.com/wasmerio/winterjs winterjs
+          cd winterjs
+          cargo install --path=.
 
       - name: test
         run: |
