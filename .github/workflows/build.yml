@@ -42,7 +42,9 @@ jobs:
         run: |
           # cargo install --git https://github.com/wasmerio/winterjs winterjs
 
-          git clone https://github.com/wasmerio/winterjs winterjs
+
+          git clone https://github.com/ahaoboy/winterjs winterjs
+          # git clone https://github.com/wasmerio/winterjs winterjs
           cd winterjs
           cargo install --path=.
 
